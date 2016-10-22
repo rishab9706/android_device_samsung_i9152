@@ -2,14 +2,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/i9152/device_i9152.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i9152
-PRODUCT_NAME := cm_i9152
+PRODUCT_NAME := slim_i9152
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := GT-I9152
