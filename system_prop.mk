@@ -38,8 +38,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false
-
-# Disable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.adb.secure=0 \
-    ro.secure=0

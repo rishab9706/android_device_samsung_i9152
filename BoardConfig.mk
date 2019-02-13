@@ -23,9 +23,10 @@ TARGET_KERNEL_CONFIG := lineageos_i9152_defconfig
 BOARD_KERNEL_CMDLINE := console=ttyS0,115200n8 mem=832M@0xA2000000 androidboot.console=ttyS0 vc-cma-mem=0/176M@0xCB000000
 BOARD_KERNEL_BASE := 0xa2000000
 BOARD_KERNEL_PAGESIZE := 4096
+BOARD_KERNEL_IMAGE_NAME := zImage
 
 # Kernel toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+KERNEL_TOOLCHAIN := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
 
 # File system
@@ -95,7 +96,6 @@ WIFI_DRIVER_MODULE_ARG              := "firmware_path=/system/etc/wifi/bcmdhd_st
 WIFI_BAND                           := 802_11_ABG
 
 # healthd
-BOARD_HAL_STATIC_LIBRARIES := libhealthd.capri
 WITH_CM_CHARGER := false
 
 # Assert
@@ -117,3 +117,6 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/i9152/sepolicy
+
+# Manifests
+DEVICE_FRAMEWORK_MANIFEST_FILE += system/libhidl/vintfdata/manifest_healthd_exclude.xml

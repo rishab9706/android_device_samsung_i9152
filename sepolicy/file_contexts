@@ -45,6 +45,7 @@
 /system/bin/macloader                           u:object_r:macloader_exec:s0
 /system/bin/tvserver                            u:object_r:tvserver_exec:s0
 /system/bin/vclmk                               u:object_r:vclmk_exec:s0
+/system/vendor/bin/hw/android\.hardware\.health@2\.0-service\.i9152  u:object_r:hal_health_default_exec:s0
 
 ###################################
 # Data files
