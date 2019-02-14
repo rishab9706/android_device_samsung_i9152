@@ -25,10 +25,6 @@ BOARD_KERNEL_BASE := 0xa2000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := zImage
 
-# Kernel toolchain
-KERNEL_TOOLCHAIN := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-
 # File system
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
