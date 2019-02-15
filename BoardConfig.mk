@@ -29,7 +29,7 @@ BOARD_KERNEL_IMAGE_NAME := zImage
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 8388608
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 10485760
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1572864000
 # Disable journaling on system.img to save space.
 BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
@@ -62,6 +62,8 @@ BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 
 # GPS
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/i9152/include
+TARGET_NO_RPC := true
+USE_DEVICE_SPECIFIC_GPS := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -95,7 +97,7 @@ WIFI_BAND                           := 802_11_ABG
 WITH_CM_CHARGER := false
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := crater,craterxx,i9152
+TARGET_OTA_ASSERT_DEVICE := i9152
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -116,3 +118,8 @@ BOARD_SEPOLICY_DIRS += device/samsung/i9152/sepolicy
 
 # Manifests
 DEVICE_FRAMEWORK_MANIFEST_FILE += system/libhidl/vintfdata/manifest_healthd_exclude.xml
+
+# TWRP Support - Optional
+ifeq ($(WITH_TWRP),true)
+-include $(COMMON_PATH)/twrp.mk
+endif

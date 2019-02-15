@@ -14,8 +14,6 @@
 /dev/proximity                                  u:object_r:sensors_device:s0
 /dev/ttyS0                                      u:object_r:serial_device:s0
 /dev/ttyS2                                      u:object_r:hci_attach_dev:s0
-/dev/ttyS3                                      u:object_r:gps_device:s0
-/dev/bcm_gps                                    u:object_r:gps_device:s0
 /dev/bcm_irpc                                   u:object_r:radio_device:s0
 /dev/bcm_log                                    u:object_r:radio_device:s0
 /dev/bcm_security                               u:object_r:radio_device:s0
@@ -40,7 +38,6 @@
 #
 /system/bin/bkmgrd                              u:object_r:bkmgrd_exec:s0
 /system/bin/geomagneticd                        u:object_r:geomagneticd_exec:s0
-/system/bin/glgps                               u:object_r:gpsd_exec:s0
 /system/bin/immvibed                            u:object_r:immvibed_exec:s0
 /system/bin/macloader                           u:object_r:macloader_exec:s0
 /system/bin/tvserver                            u:object_r:tvserver_exec:s0
@@ -54,14 +51,6 @@
 /data/misc/radio(/.*)?                          u:object_r:ril_db_file:s0
 /data/system/yas.cfg                            u:object_r:geomagneticd_data_file:s0
 /data/system/yas-backup.cfg                     u:object_r:geomagneticd_data_file:s0
-/data/.gps.interface.pipe.to_gpsd               u:object_r:gps_data_file:s0
-/data/.gps.interface.pipe.to_jni                u:object_r:gps_data_file:s0
-/data/.gpsd.lock                                u:object_r:gps_data_file:s0
-/data/glgpsctrl                                 u:object_r:gps_data_file:s0
-/data/gldata.sto                                u:object_r:gps_data_file:s0
-/data/lbsdata(.*)                               u:object_r:gps_data_file:s0
-/data/lto2.dat                                  u:object_r:gps_data_file:s0
-/data/ltoStatus.txt                             u:object_r:gps_data_file:s0
 /data/atx/bkmgrdlock                            u:object_r:radio_data_file:s0
 /data/ipccp.bin                                 u:object_r:radio_data_file:s0
 
@@ -75,5 +64,3 @@
 #
 /sys/devices/platform/bcmbt-rfkill.1/rfkill/rfkill0/state -- u:object_r:sysfs_bluetooth_writable:s0
 /sys/devices/platform/bcmbt-rfkill.1/rfkill/rfkill0/type  -- u:object_r:sysfs_bluetooth_writable:s0
-/sys/devices/platform/mdnie/mdnie/mdnie/cabc -- u:object_r:sysfs_writable:s0
-/sys/devices/platform/mdnie/mdnie/mdnie/rgb  -- u:object_r:sysfs_writable:s0
