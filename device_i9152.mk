@@ -45,9 +45,10 @@ $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 PRODUCT_PACKAGES += \
     libstlport
 
-# GPS
-PRODUCT_PACKAGES += \
-    libglgps-compat
+# Gps
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/gps_debug.conf:system/etc/gps_debug.conf \
+    $(COMMON_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
 
 # Audio modules
 PRODUCT_PACKAGES += \
