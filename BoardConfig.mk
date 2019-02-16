@@ -120,7 +120,3 @@ BOARD_SEPOLICY_DIRS += device/samsung/i9152/sepolicy
 # Manifests
 DEVICE_FRAMEWORK_MANIFEST_FILE += system/libhidl/vintfdata/manifest_healthd_exclude.xml
 
-# TWRP Support - Optional
-ifeq ($(WITH_TWRP),true)
--include $(COMMON_PATH)/twrp.mk
-endif
