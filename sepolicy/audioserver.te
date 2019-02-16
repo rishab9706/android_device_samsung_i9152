@@ -1,3 +1,5 @@
 allow audioserver system_file:file execmod;
 allow audioserver mediaserver_service:service_manager find;
 allow audioserver tvserver:binder { transfer call };
+allow audioserver sysfs_cpuinfo:dir search;
+allow audioserver sysfs_cpuinfo:file { getattr open read };

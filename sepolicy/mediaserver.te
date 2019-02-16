@@ -1,1 +1,3 @@
 allow mediaserver tvserver:binder call;
+allow mediaserver sysfs_cpuinfo:dir search;
+allow mediaserver sysfs_cpuinfo:file { getattr open read };

@@ -8,6 +8,17 @@ allow init root_block_device:blk_file setattr;
 allow init sysfs:lnk_file setattr;
 allow init tmpfs:lnk_file create;
 allow init debugfs:file write;
+allow init sysfs_bluetooth_writable:file setattr;
+allow init sysfs_display:file { open setattr write };
+allow init sysfs_radio:file setattr;
+allow init system_file:file execute_no_trans;
+allow init proc:file { open write };
+allow init sysfs:file { open read setattr write };
+allow init sysfs_batteryinfo:file setattr;
+allow init sysfs_cpuinfo:file { setattr open read };
+allow init su_exec:file { execute getattr open read };
+allow init sysfs_lmkd:file setattr;
+allow init sudaemon:process { noatsecure rlimitinh siginh transition };
 
 # insmod
 allow init self:capability sys_module; # TODO: want sys_ptrace too
