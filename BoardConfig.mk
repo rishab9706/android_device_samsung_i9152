@@ -54,7 +54,7 @@ TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
 BOARD_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS -DCAPRI_HWC -DREFBASE_JB_MR1_COMPAT_SYMBOLS
 
 # LINEAGEHW
-BOARD_HARDWARE_CLASS := hardware/samsung/cmhw/ device/samsung/i9152/cmhw/
+BOARD_HARDWARE_CLASS := hardware/samsung/lineagehw/ device/samsung/i9152/cmhw/
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/samsung/i9152/ril/
