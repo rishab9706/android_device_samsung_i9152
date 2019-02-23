@@ -49,4 +49,4 @@ $(INSTALLED_BOOTIMAGE_TARGET): $(INSTALLED_KERNEL_TARGET)
 	$(ACP) -fp $< $@
 
 $(INSTALLED_RECOVERYIMAGE_TARGET): $(recovery_uncompressed_ramdisk)
-lzop -f9 -o $@ $<
+        lzop -f9 -o $< $@
