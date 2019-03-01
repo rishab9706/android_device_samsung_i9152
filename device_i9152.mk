@@ -34,6 +34,10 @@ PRODUCT_PACKAGES += \
     SamsungDoze \
     Snap
 
+# Stlport
+PRODUCT_PACKAGES += \
+    libstlport
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     hostapd \
