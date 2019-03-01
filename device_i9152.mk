@@ -42,10 +42,6 @@ PRODUCT_PACKAGES += \
 
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
-# Stlport
-PRODUCT_PACKAGES += \
-    libstlport
-
 # Gps
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/gps_debug.conf:system/etc/gps_debug.conf \
