@@ -19,6 +19,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/ueventd.capri.rc:root/ueventd.capri.rc \
     $(LOCAL_PATH)/rootdir/rild.rc:system/etc/init/rild.rc
 
+# TWRP
+ifeq ($(WITH_TWRP),true)
+$(call inherit-product, device/samsung/i9152/twrp/twrp.mk)
+else
+TARGET_RECOVERY_FSTAB := device/samsung/i9152/rootdir/fstab.capri
+endif
+
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayouts/bcm_headset.kl:system/usr/keylayout/bcm_headset.kl \
