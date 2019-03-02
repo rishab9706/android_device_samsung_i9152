@@ -1,3 +1,5 @@
 allow netd dhcp_data_file:dir setattr;
 allow netd sysfs_cpuinfo:dir search;
 allow netd sysfs_cpuinfo:file { getattr open read };
+allow netd sysfs_rmnet:dir search;
+allow netd sysfs_rmnet:file { open write };
