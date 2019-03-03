@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
     resize2fs_static \
     setup_fs
 
+# Fuse support
+PRODUCT_PACKAGES += \
+    sdcard_fuse
+
 # F2FS Filesystem
 PRODUCT_PACKAGES += \
     fsck.f2fs \
