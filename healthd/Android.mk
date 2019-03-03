@@ -21,6 +21,9 @@ LOCAL_SRC_FILES := healthd_board_capri.cpp
 
 LOCAL_MODULE := libhealthd.capri
 
+LOCAL_C_INCLUDES := system/core/healthd/include/healthd \
+    system/core/base/include
+
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_STATIC_LIBRARIES := libhealthd.default

@@ -94,7 +94,7 @@ WIFI_DRIVER_MODULE_ARG              := "firmware_path=/system/etc/wifi/bcmdhd_st
 WIFI_BAND                           := 802_11_ABG
 
 # healthd
-WITH_CM_CHARGER := false
+WITH_LINEAGE_CHARGER := false
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := GT- I9152,crater,craterxx
