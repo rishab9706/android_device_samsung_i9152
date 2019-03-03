@@ -20,7 +20,7 @@ LOCAL_C_INCLUDES := \
     $(TOPDIR)frameworks/av/services/audiopolicy/engine/interface
 
 LOCAL_MODULE := libaudiopolicymanager
-
+LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
