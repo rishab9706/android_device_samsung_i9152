@@ -62,7 +62,6 @@ BOARD_RIL_CLASS := ../../../device/samsung/i9152/ril/
 BOARD_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 
 # GPS
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/i9152/include
 TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 
