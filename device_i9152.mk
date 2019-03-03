@@ -41,6 +41,17 @@ PRODUCT_PACKAGES += \
     SamsungDoze \
     Snap
 
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    make_ext4fs \
+    resize2fs_static \
+    setup_fs
+
+# F2FS Filesystem
+PRODUCT_PACKAGES += \
+    fsck.f2fs \
+    mkfs.f2fs
+
 # Stlport
 PRODUCT_PACKAGES += \
     libstlport
