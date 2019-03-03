@@ -120,3 +120,6 @@ BOARD_SEPOLICY_DIRS += device/samsung/i9152/sepolicy
 # Manifests
 DEVICE_FRAMEWORK_MANIFEST_FILE += system/libhidl/vintfdata/manifest_healthd_exclude.xml
 
+# Override healthd HAL
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.capri
+
