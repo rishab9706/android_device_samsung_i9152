@@ -38,7 +38,6 @@ PRODUCT_COPY_FILES += \
 # Packages
 PRODUCT_PACKAGES += \
     charger_res_images \
-    SamsungDoze \
     Snap
 
 # Filesystem management tools
