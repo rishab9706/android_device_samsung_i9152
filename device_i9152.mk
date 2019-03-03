@@ -72,6 +72,11 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/gps_debug.conf:system/etc/gps_debug.conf \
     $(COMMON_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
 
+# Legacy GPS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
+    gps.capri
+
 # Audio modules
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
