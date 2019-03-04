@@ -8,6 +8,8 @@ on early-init
 
     mount debugfs /sys/kernel/debug /sys/kernel/debug mode=755
 
+    setprop sys.usb.ffs.aio_compat 1
+
 on init
     # Videocore
     chmod 0660 /proc/vc-dnfo
