@@ -44,6 +44,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false
-
-# We need fuse
-ro.sys.sdcard_fuse=1
