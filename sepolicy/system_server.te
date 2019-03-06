@@ -3,7 +3,9 @@
 # Access /efs/wifi/.mac.info
 allow system_server efs_file:dir search;
 allow system_server efs_file:file { read open };
-allow system_server device:chr_file { ioctl };
+allow system_server device:chr_file { ioctl open read write };
+allow system_server default_android_hwservice:hwservice_manager find;
+allow system_server default_android_service:service_manager { find add };
 
 # Wi-Fi
 allow system_server self:capability sys_module;
