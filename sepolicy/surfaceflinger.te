@@ -1,5 +1,1 @@
 allow surfaceflinger tvserver:binder { transfer call };
-allow surfaceflinger sysfs_cpuinfo:dir search;
-allow surfaceflinger sysfs_cpuinfo:file { getattr open read };
-allow surfaceflinger sysfs_display:dir search;
-allow surfaceflinger sysfs_display:file { open read };

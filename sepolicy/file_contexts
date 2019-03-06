@@ -44,6 +44,7 @@
 /system/bin/macloader                           u:object_r:macloader_exec:s0
 /system/bin/tvserver                            u:object_r:tvserver_exec:s0
 /system/bin/vclmk                               u:object_r:vclmk_exec:s0
+/system/vendor/bin/hw/android\.hardware\.health@2\.0-service\.i9152  u:object_r:hal_health_default_exec:s0
 
 ###################################
 # Data files
@@ -65,18 +66,3 @@
 #
 /sys/devices/platform/bcmbt-rfkill.1/rfkill/rfkill0/state -- u:object_r:sysfs_bluetooth_writable:s0
 /sys/devices/platform/bcmbt-rfkill.1/rfkill/rfkill0/type  -- u:object_r:sysfs_bluetooth_writable:s0
-
-# healthd
-/sys/devices/platform/s3c2440-i2c.5/i2c-5/5-0066/max8997-charger(/.*)?	u:object_r:sysfs_batteryinfo:s0
-/sys/devices/platform/sec-battery(/.*)?                          u:object_r:sysfs_batteryinfo:s0
-/sys/devices/platform/max8922-charger(/.*)?                      u:object_r:sysfs_batteryinfo:s0
-/sys/devices/platform/i2c-gpio.9/i2c-9/9-0036/power_supply(/.*)? u:object_r:sysfs_batteryinfo:s0
-
-# CPU
-/sys/devices/system/cpu(/.*)?                                    u:object_r:sysfs_cpuinfo:s0
-
-# lmkd
-/sys/module/lowmemorykiller(/.*)?                                u:object_r:sysfs_lmkd:s0
-
-# zram
-/sys/devices/virtual/block/zram0(/.*)?                           u:object_r:sysfs_zram:s0
