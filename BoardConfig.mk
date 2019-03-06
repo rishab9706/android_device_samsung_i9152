@@ -107,6 +107,10 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charg
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
+# Audio
+BOARD_USE_TINYALSA_AUDIO := true
+BOARD_USE_YAMAHA_MC1N2_AUDIO := true
+
 # Disable tcache
 MALLOC_SVELTE := true
 

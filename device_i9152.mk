@@ -77,14 +77,17 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     gps.capri
 
-# Audio modules
+# Audio Packages
 PRODUCT_PACKAGES += \
+    audio.primary.capri \
     audio.a2dp.default \
     audio.usb.default \
-    audio.r_submix.default
+    libaudiohw_legacy
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
+    $(LOCAL_PATH)/configs/tinyalsa-audio.xml:system/etc/tinyalsa-audio.xml \
     $(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf
 
 USE_CUSTOM_AUDIO_POLICY := 1
