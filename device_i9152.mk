@@ -69,8 +69,8 @@ $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
 # Gps
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/gps_debug.conf:system/etc/gps_debug.conf \
-    $(COMMON_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
+    device/samsung/i9152/configs/gps_debug.conf:system/etc/gps_debug.conf \
+    device/samsung/i9152/configs/sirfgps.conf:system/etc/sirfgps.conf
 
 # Legacy GPS
 PRODUCT_PACKAGES += \
