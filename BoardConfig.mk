@@ -116,7 +116,6 @@ MALLOC_SVELTE := true
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
 # SELinux
-SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_SEPOLICY_DIRS += device/samsung/i9152/sepolicy
 
 # Manifests
