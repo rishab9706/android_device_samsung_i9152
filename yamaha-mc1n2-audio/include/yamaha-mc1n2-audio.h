@@ -77,7 +77,7 @@ struct yamaha_mc1n2_audio_pdata {
  * Platforms
  */
 
-extern struct yamaha_mc1n2_audio_pdata galaxys2_pdata;
+extern struct yamaha_mc1n2_audio_pdata i9152_pdata;
 
 /*
  * Functions

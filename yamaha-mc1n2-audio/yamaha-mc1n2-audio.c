@@ -33,7 +33,7 @@
 #include <yamaha-mc1n2-audio.h>
 
 struct yamaha_mc1n2_audio_pdata *yamaha_mc1n2_audio_platforms[] = {
-	&galaxys2_pdata,
+	&i9152_pdata,
 };
 
 int yamaha_mc1n2_audio_platforms_count = sizeof(yamaha_mc1n2_audio_platforms) /
