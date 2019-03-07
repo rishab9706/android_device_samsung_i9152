@@ -95,7 +95,7 @@ WIFI_BAND                           := 802_11_ABG
 WITH_LINEAGE_CHARGER := false
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := GT-I9152,crater,craterxx
+TARGET_OTA_ASSERT_DEVICE := GT-I9152,crater,craterxx,I9152
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
