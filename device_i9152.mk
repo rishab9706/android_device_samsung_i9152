@@ -5,8 +5,7 @@ $(call inherit-product, vendor/samsung/i9152/i9152-vendor.mk)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Boot animation
-TARGET_SCREEN_WIDTH := 480
-TARGET_SCREEN_HEIGHT := 800
+TARGET_BOOT_ANIMATION_RES := 480
 
 # Init files
 PRODUCT_COPY_FILES += \
